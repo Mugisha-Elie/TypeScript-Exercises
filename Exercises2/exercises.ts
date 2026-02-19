@@ -40,7 +40,9 @@ function logMessage(input: string): void{
 }
 
 const message = logMessage("I am Groot!");
-console.log(message); // undefined and no error squiggly lines something is wrong here I shoulh have been given an error here
+console.log(message);
+
+// undefined and no error squiggly lines something is wrong here I shoulh have been given an error here
 
 
 
@@ -152,4 +154,18 @@ const company: Company = {
     employees
 }
 
-console.log(company)
+console.log(company);
+
+
+
+// Question 2
+function printStatus(input: string | number[]): void{
+    if(Array.isArray(input)){
+        console.log(`Length: ${input.length}`)
+    }else{
+        console.log(`String: ${input}`);
+    }
+}
+
+printStatus([1,2,3,4])
+printStatus("We can be on a 3 hour time difference")
