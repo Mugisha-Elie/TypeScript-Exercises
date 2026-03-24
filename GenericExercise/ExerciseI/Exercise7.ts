@@ -1,0 +1,1 @@
+// function fetchData<T>(url:string): Promise<T>
